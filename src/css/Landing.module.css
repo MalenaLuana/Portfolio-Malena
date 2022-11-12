@@ -1,0 +1,64 @@
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color:#980222;
+    display: flex;
+    background-image: url('./images/landing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.content{
+    min-height: 100vh;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;  
+}
+.title{
+    user-select:none;
+     
+    font-family: Olympus Mount;
+    font-size: 150pt;
+    letter-spacing: 2px;
+    background-image: linear-gradient(
+        to right,
+        #fcfcfc,
+        rgb(255, 255, 255) 50%,
+        #980222 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+}
+
+
+  .title:hover {
+    background-position: 0;
+    cursor: pointer;
+    letter-spacing: 4px;
+   }
+
+p{
+    user-select:none;
+     
+    font-family: 'Javanese Text';
+    font-size: 50pt;
+    color: white;
+    position: absolute;
+    top:15%;
+    
+
+}
+
+

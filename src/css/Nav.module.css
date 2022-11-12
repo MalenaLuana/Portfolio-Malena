@@ -1,0 +1,56 @@
+.container{
+   background-color:rgb(22, 22, 22) ;
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgb(44, 44, 44);
+    position: fixed;
+    
+}
+.links{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+
+    font-family:'Louis George Cafe Light';
+    font-size: 20pt;
+    box-sizing: border-box;
+
+}
+.link{
+text-decoration: none;
+color: white;
+overflow: hidden;
+position: relative;
+display: inline-block;
+letter-spacing: 1px;
+user-select:none;
+}
+.link::before{
+    content: '';
+     position: absolute;
+     top:15px;
+     width: 105%;
+     left: 0;
+
+   }
+
+.link::before {
+  background-color: #d31919;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.link:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
