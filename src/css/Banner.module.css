@@ -1,0 +1,71 @@
+.banner {
+    padding-top: 10vh;
+    height: 100vh;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+}
+
+.one {
+    font-family: Olympus Mount;
+    color: white;
+    font-size: 80pt;
+    letter-spacing: 5px;
+
+
+}
+
+
+
+.port {
+    font-family: Olympus Mount;
+    color: white;
+    font-size: 110pt;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.port:before {
+    content: "PORTFOLIO";
+    position: absolute;
+    color: #980222;
+    top: 0;
+  
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.port:hover:before {
+    width: 100%;
+}
+
+
+.middle {
+
+    display: flex;
+    align-items: center;
+    height: 130px;
+    letter-spacing: 5px;
+}
+
+.text h3 {
+    font-family: Shockwave;
+    color: white;
+    font-size: 40pt;
+}
+
+.image {
+    width: 600px;
+}

@@ -1,10 +1,16 @@
 import React from "react";
 import style from '../css/Home.module.css'
 import { motion } from "framer-motion";
+
+
+//*----COMPONENTS---
 import Nav from "./Nav";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Banner from "./Banner";
+
+
 
 export default function Home(){
 return(
@@ -13,8 +19,7 @@ return(
     animated={{opacity:1}}
     >
      <Nav/>
-  
-    <div><h1>home</h1></div>
+     <Banner/>
      <About/>
      <Projects/>
      <Contact/>

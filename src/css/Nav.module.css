@@ -9,7 +9,7 @@
     border-width: 1px;
     border-color: rgb(44, 44, 44);
     position: fixed;
-    
+    z-index: 1;
 }
 .links{
 
