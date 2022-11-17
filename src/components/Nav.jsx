@@ -1,19 +1,41 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import style from "../css/Nav.module.css"
+import menu from '../css/images/menubtn.png'
+import { useState } from "react";
 
 export default function Nav(){
+
+
+
+const [clicked,setClicked]=useState(true)
+
+const handleClick= ()=>{
+    if (clicked==false){
+        setClicked(true)
+    } else {
+        setClicked(false)
+    }
+}
+
+const handleChangeMenu= ()=>{
+    setClicked(true)
+    console.log(clicked)
+}
     return (
         <div className={style.container}>
             
-             <div className={style.links}>
-                
-                    <a className={style.link} href="">INICIO</a>
-                    <a className={style.link} href="#about">SOBRE MI</a>
-                    <a className={style.link} href="#projects">PROYECTOS</a>
-                    <a className={style.link} href="#contact">CONTACTO</a>
-            
+             <div className={clicked? style.active:style.links} id='nav'>
+           
+                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#banner">INICIO</a>
+                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#about">SOBRE MI</a>
+                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#projects">PROYECTOS</a>
+                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#contact">CONTACTO</a>
              </div>
+           
+             <div>
+             <button className={style.menuBtn} onClick={e=>handleClick(e)}><img src={menu} alt="" /></button>
+             </div>
+           
         </div>
     )
 }

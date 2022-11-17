@@ -3,7 +3,7 @@
     height: 160vh;
     width: 100%;
     color: white;
-
+    user-select:none;
     position: relative;
 
 }
@@ -190,3 +190,4 @@
 .back img {
    width: 50px;
 }
+

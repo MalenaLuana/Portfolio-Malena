@@ -7,7 +7,7 @@ import right from '../css/images/codeRight.png'
 
 export default function Banner(){
     return (
-        <div className={style.banner}>
+        <div className={style.banner} id='banner'>
             <div className={style.text} >
             <h1 className={style.one}>BIENVENIDXS</h1>
             <div className={style.middle}>
