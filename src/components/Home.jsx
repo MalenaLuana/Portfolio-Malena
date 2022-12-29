@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 //*----COMPONENTS---
 import Nav from "./Nav";
-import About from "./About";
+import About from "./About/About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Banner from "./Banner";

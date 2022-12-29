@@ -1,0 +1,20 @@
+.content {
+background-color: #2d2d2d;
+height: 50%; 
+width:50% ;
+margin: auto;
+margin-top: 200px;
+padding: 20px;
+}
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}

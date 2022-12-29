@@ -55,6 +55,7 @@ export default function Form() {
                 <label htmlFor="message4" >MENSAJE:</label>
                 <textarea form="contactForm" type="text" id="message" name='message' />
                </div>
+              
                 <button className={style.formBtn} type="sumbit">ENVIAR</button>
             </form>
             </div>

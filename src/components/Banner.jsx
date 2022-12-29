@@ -8,6 +8,7 @@ import right from '../css/images/codeRight.png'
 export default function Banner(){
     return (
         <div className={style.banner} id='banner'>
+            <div className={style.cont}>
             <div className={style.text} >
             <h1 className={style.one}>BIENVENIDXS</h1>
             <div className={style.middle}>
@@ -18,10 +19,10 @@ export default function Banner(){
             <a href="#about" className={style.port}>PORTFOLIO</a> 
             
             </div>
-            <div className={style.image}>
-             <img src={image} alt="" />
+            <div>
+             <img src={image} className={style.image}alt="" />
             </div>  
-           
+           </div>
         </div>
     )
 }

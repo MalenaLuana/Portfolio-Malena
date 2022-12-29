@@ -1,5 +1,13 @@
 *{
     scroll-behavior: smooth;
-     
+     margin:0;
+
 }
 
+
+@media screen and (max-width: 970px) {
+    .container{
+     max-width: 970px;
+    } 
+   
+   }
