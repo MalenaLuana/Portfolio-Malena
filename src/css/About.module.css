@@ -17,25 +17,33 @@
 }
 .content{
     display: flex;
-   font-family: 'Louis George Cafe';
-   font-weight: bold;
+    font-family: 'Louis George Cafe';
+    letter-spacing: 1.5px;
     justify-content: space-around;
     text-align: center;
 
 }
 
 
+.red{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 105vh;
+    background-color: #810f28;
 
+}
 
 /*?-----------------------------CARDS*/
 .card{
-    background-color: black;
+    background-color:#181818;
     width: 30%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #9e102e;
+    color:#eeeeee;
     font-size: 40pt;
 }
 
@@ -47,7 +55,7 @@
 
 }
 .card:hover .box {
-    cursor: pointer;
+    cursor: url('./images/cursor.png'), auto;	
 }
 .card:focus .box {
     transform: rotateY(180deg);
@@ -80,15 +88,15 @@
   
     backface-visibility: hidden;
     font-family:Louis George Cafe Light;
-
-   
     font-size: 30pt;
-
-    padding: 10px;
-
+    
+    padding-left:50px ;
+    padding-right: 50px;
     width: 100%;
+    height: 100%;
+    line-height:1.5em;
+    text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -97,31 +105,11 @@
     transform: rotateY(180deg);
 }
 
-
-/*?-----------------------------CARDS*/
-
-.card2{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 80vh;
-    color: #9e102e;
-    font-size: 40pt;
+.backText{
+    font-size: 14pt;
 }
 
-.card3{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 80vh;
-    color: #9e102e;
-    font-size: 40pt;
-}
-
+/*?-----fin------------------------CARDS*/
 
 
 
@@ -132,28 +120,78 @@
 /* RESPONSIVE */
 
 @media screen and (max-width: 970px) {
+  .container {
+    background-color: #181818;
+    min-height: 150vh;
+    width: 100%;
+    color: white;
+    user-select:none;
+    position: relative;
+
+}
+.red{
+    min-height: 145vh;
+}
+.content{
+    display: flex;
+    
+    flex-direction: column;
+   font-family: 'Louis George Cafe';
+   letter-spacing: 1.5px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card{
+    width: 80%;
+    height: 35vh;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    color:#eeeeee;
+    font-size: 40pt;
+}
+.box .back {
   
-    .container{
-        min-height: 100vh;
-        max-width: 970px;
-    } 
-    .links{
-     width: 60%;
- 
-     padding: 5px;
- 
-    } 
-    .link{
-     font-size: 11pt;
-    }
-    .link::before{
- 
-       content: '';
-        position: absolute;
-        top:50%;
-        width: 105%;
-        left: 0;
-   
-      }
+    backface-visibility: hidden;
+    font-family:Louis George Cafe Light;
+
+    padding-top: 10px;
+    padding-left:50px ;
+    padding-right: 50px;
+    width: 100%;
+    line-height:1em;
+
+}
    }
 
+   @media screen and (max-width: 1550px) {
+
+    .box .back {
+
+        padding-top: 40px;
+        padding-left:50px ;
+        padding-right: 50px;
+        width: 100%;
+        line-height:1.3em;
+      
+    }
+    .backText{
+        font-size: 12pt;
+    }
+
+   }
+   @media screen and (max-width: 1120px) {
+    .box .back {
+
+        padding-top: 20px;
+        line-height:1em;
+      
+    }
+    .backText{
+        font-size: 10pt;
+    }
+ 
+   }

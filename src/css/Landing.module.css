@@ -2,14 +2,15 @@
 .container{
     min-height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #181818;
     color:#980222;
     display: flex;
-    background-image: url('./images/landing.jpg');
+    /* background-image: url('./images/landing.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+     */
+     position: absolute;
 }
 .content{
     min-height: 100vh;
@@ -45,7 +46,7 @@
 
   .title:hover {
     background-position: 0;
-    cursor: pointer;
+    cursor: url('./images/pointer.png'), auto;	
     letter-spacing: 4px;
    }
 

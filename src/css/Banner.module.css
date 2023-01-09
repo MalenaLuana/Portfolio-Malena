@@ -14,7 +14,6 @@
 }
 .cont{
     display: flex;
-    width: 80%;
     align-items: center;
 }
 .text {
@@ -42,7 +41,7 @@
     font-size: 110pt;
     text-transform: uppercase;
     position: relative;
-    cursor: pointer;
+    cursor: url('./images/pointer.png'), auto;	
     text-decoration: none;
     
     transition: all 500ms ease;
@@ -62,7 +61,7 @@
     font-family: Shockwave;
     color: white;
     font-size: 40pt;
-    
+    pointer-events: none;
     transition: all 500ms ease;
 }
 
@@ -70,12 +69,27 @@
     width: 800px;
     -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    pointer-events: none;
 }
 
 
 
 /* RESPONSIVE */
+@media screen and (max-width: 1550px) {
 
+    .image{
+       width: 500px;
+       transition: ease 0.3s;
+    }
+    
+   }
+   @media screen and (max-width: 1550px) {
+
+    .image{
+       display: none;
+    }
+    
+   }
 @media screen and (max-width: 970px) {
     .banner{
         background-image:none
@@ -112,3 +126,4 @@
     }
     
    }
+   
