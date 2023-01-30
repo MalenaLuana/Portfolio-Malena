@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Shockwave;
+    src: url('./fonts/SHOCKWAVE.TTF')
+}
 .banner {
     padding-top: 10vh;
     height: 100vh;
