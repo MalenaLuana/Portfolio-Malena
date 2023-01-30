@@ -19,7 +19,6 @@ const handleClick= ()=>{
 
 const handleChangeMenu= ()=>{
     setClicked(true)
-    console.log(clicked)
 }
     return (
         <div className={style.container}>

@@ -18,7 +18,7 @@ export default function Form() {
         useref.current,
         'OifE1icBULK0IGskJ'
        )
-    }
+          }
 
     const handleChange = (e)=>{
         
@@ -27,14 +27,16 @@ export default function Form() {
     return (
         <div className={style.formMain} id='contact'>
             <div className={style.formContent}>
+
             <div className={style.left}>
                 <h1>   contactame</h1>
                 <div className={style.social}>
-                  <a href=""><img src={wpp} alt="" /></a>
+                  <a href="https://api.whatsapp.com/send?phone=1150046655&text=Link%20a%20wpp" target="_blank" rel="noopener noreferrer"><img src={wpp} alt="" /></a>
                   <a href="https://www.linkedin.com/in/malena-luana-fresco/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" /></a>
                   <a href="https://github.com/MalenaLuana" target="_blank" rel="noopener noreferrer"><img src={git} alt="" /></a> 
                 </div>
             </div>
+
             <form className={style.form} id='contactForm' ref={useref} onSubmit={e=>handleSubmint(e)}>
               <div className={style.regInput}>
                 <label htmlFor="mail" >E-MAIL:</label>
