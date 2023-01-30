@@ -109,3 +109,15 @@ width: 500px;
    
 
 }
+
+@media screen and (max-width: 480px) {
+ 
+   .card{
+        width: 350px;
+    }
+ .card .video:nth-child(1) {
+   width: 350px;
+ }
+   
+
+}

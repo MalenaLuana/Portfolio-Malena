@@ -130,4 +130,13 @@
     }
     
    }
-   
+   @media screen and (max-width: 480px) {
+    .one {
+        font-size: 30pt;}
+    .port {
+        font-size: 45.5pt;
+    }
+    .text h3{
+        font-size:10pt;
+    }
+   }
