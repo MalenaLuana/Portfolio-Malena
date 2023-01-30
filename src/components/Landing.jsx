@@ -2,7 +2,7 @@ import React from "react";
 import style from '../css/Landing.module.css'
 import { Link } from "react-router-dom";
 import {motion}from 'framer-motion'
-import { useEffect, useState,useRef  } from "react";
+import { useState} from "react";
 
 /*-----------images----*/ 
 import cloud from '../css/images/landing/cloud.png'
@@ -23,7 +23,7 @@ const [cursorY,setCursorY]= useState()
 const parallaxHandler = (e)=>{
     const x= (e.clientX - window.innerWidth*2)
     const y =( e.clientY - window.innerHeight/2)
-  console.log('salida:',x,y)
+
    setCursorX(x)
    setCursorY(y)
 }

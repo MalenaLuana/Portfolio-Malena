@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState,useRef  } from "react";
-import {motion}from 'framer-motion'
 import style from '../../css/About.module.css'
 
 
@@ -33,7 +32,7 @@ useEffect(()=>{
     return()=>{
       window.removeEventListener('scroll',handleScroll)
     }
-},[])
+},[hidden])
 
 
     return (

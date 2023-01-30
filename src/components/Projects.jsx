@@ -1,13 +1,11 @@
 import React from "react";
-import Nav from "./Nav";
 import style from "../css/Projects.module.css"
 
 
 //---image/media----
 import video from '../css/media/Dogs.pi.mp4'
 import video2 from '../css/media/MEmu 2023-01-28 23-29-19.mp4'
-import imageDogs from '../css/media/project1.jpg'
-import ReactPlayer from 'react-player'
+
 import link from '../css/images/projects/link-interface-symbol-rotated-to-right.png'
 import git from '../css/images/projects/git.png'
 //------------------

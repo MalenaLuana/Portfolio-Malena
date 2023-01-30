@@ -18,11 +18,9 @@ export default function Form() {
         useref.current,
         'OifE1icBULK0IGskJ'
        )
+       alert('Tu mensaje fue enviado!')
           }
 
-    const handleChange = (e)=>{
-        
-    }
 
     return (
         <div className={style.formMain} id='contact'>
