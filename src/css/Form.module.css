@@ -279,18 +279,9 @@
     }
 }
 
+
+
 @media screen and (max-width: 480px) {
-    .messageInput {
-        width: 80%;
-    }
-
-    .left img {
-        height: 70px;
-
-    }
-}
-
-@media screen and (max-width: 350px) {
   
     .form{
         height: 100%;

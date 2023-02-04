@@ -2,8 +2,7 @@
     background-color: #181818;
     background-image: url('../css/images/projectBack.jpg');
     background-attachment: fixed;
-    
-    height: 110vh;
+     padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,13 +14,12 @@
 
     display: flex;
     justify-content: space-around;
-    width: 90%;
-    height: 50%;
-    
+
 }
 
 .card {
     position: relative;
+    width: 30%;
     background-color: #ffffff;
     border-radius: 32px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
@@ -88,44 +86,38 @@ font-size: 15pt;
     width: 90%;
 }
 
-.video{
+.video:nth-child(1){
    border-radius:32px  32px 0 0;
-   width: 460px;
+   width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
- 
-    .video{
-        width: 400px;
-    }
-   
-   
 
-}
 @media screen and (max-width: 918px) {
  
-   
+   .container{
+    padding: 5%;
+   }
     .cardsCont {
         flex-direction: column;
         align-items: center;
     }
     .card{
-        margin-top: 20px;
-        width: 400px;
+        width: 70%;
     }
    
 
 }
 
 @media screen and (max-width: 480px) {
- 
+    .container{
+     padding: 1rem;
+     }
+    
    .card{
-        width: 350px;
+     width: 80%;
+     margin-bottom: 20px;
     }
- .card .video:nth-child(1) {
-   width: 350px;
- }
-   
+
 
 }
 
@@ -133,13 +125,9 @@ font-size: 15pt;
  .container{
     min-height: 160vh;
  }
-    .card{
-         width: 70%;
-         height: 90%;
-     }
-  .card .video:nth-child(1) {
-    width: 100%;
-  }
+   .card{
+    width: 70%;
+   }
   .title{
     font-size: 10pt;
   }

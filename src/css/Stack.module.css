@@ -1,40 +1,45 @@
-.container{
-    min-height: 40vh;
+.container {
+    padding: 10rem 0;
     width: 100vw;
     background-color: #810f28;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
 }
 
-.ancla{
+.ancla {
     position: absolute;
     top: 170%;
 }
 
 @media screen and (max-width: 918px) {
-  .container{
-    min-height: 50vh;
-  }
-  .ancla{
-    top: 250%;
-  }
- }
-@media screen and (max-width:480px) {
-.ancla{
-    top: 270%;
-}
-    .container{
-        min-height: 60vh;
+    .container {
+        min-height: 50vh;
     }
-    
+
+    .ancla {
+        top: 250%;
+    }
 }
+
+@media screen and (max-width:480px) {
+    .ancla {
+        top: 270%;
+    }
+
+    .container {
+        min-height: 60vh;
+        padding: 0;
+    }
+
+}
+
 @media screen and (max-width:350px) {
 
-    .container{
+    .container {
         min-height: 80vh;
     }
-    
+
 }

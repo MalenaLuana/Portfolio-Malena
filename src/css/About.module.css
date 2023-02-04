@@ -210,7 +210,7 @@
         min-height: 150vh;
     }
     .backText{
-        line-height:20px
+        line-height:15px
     }
    }
    @media screen and (max-width: 350px) {
