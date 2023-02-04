@@ -1,5 +1,8 @@
 .container {
-    background-color: #810f28;
+    background-color: #181818;
+    background-image: url('../css/images/projectBack.jpg');
+    background-attachment: fixed;
+    
     height: 110vh;
     display: flex;
     justify-content: center;
@@ -19,7 +22,8 @@
 
 .card {
     position: relative;
-    background-color: #181818;
+    background-color: #ffffff;
+    border-radius: 32px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
@@ -33,7 +37,8 @@
 
 .title{
     font-family: 'Louis George Cafe';
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -45,7 +50,7 @@
 .text{
 
 margin-top: 5px;
-color: white;
+color: rgb(0, 0, 0);
 font-family: 'Louis George Cafe';
 font-weight: lighter;
 font-size: 15pt;
@@ -54,7 +59,8 @@ font-size: 15pt;
 .links{
     position: absolute;
     
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.884);
+    border-radius: 0 32px 0 0 ;
     width: 70px;
     height: 130px;
     display: flex;
@@ -83,9 +89,10 @@ font-size: 15pt;
 }
 
 .video{
-   
-width: 500px;
+   border-radius:32px  32px 0 0;
+   width: 460px;
 }
+
 @media screen and (max-width: 1200px) {
  
     .video{
@@ -123,7 +130,9 @@ width: 500px;
 }
 
 @media screen and (max-width: 350px) {
- 
+ .container{
+    min-height: 160vh;
+ }
     .card{
          width: 70%;
          height: 90%;

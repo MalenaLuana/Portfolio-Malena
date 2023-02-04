@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     user-select: none;
 }
 
@@ -232,7 +232,7 @@
     .formContent {
         flex-direction: column;
 
-        height: 80vh;
+        height: 70%;
 
 
     }
@@ -291,34 +291,54 @@
 }
 
 @media screen and (max-width: 350px) {
-
+  
+    .form{
+        height: 100%;
+        
+    }
+  
+   .left h1{
+    margin: 0;
+    font-size: 10pt;
+   }
     .social{
-        min-width: 150%;
+        min-width: 110%;
         display: flex;
         justify-content: space-around;
     }
     
     .left img {
-        height: 50px;
+        height: 40px;
 
     }
     .messageInput {
         width: 80%;
         height: 20%;
     }
+    .dataText{
+        display: flex;
+        flex-direction: column;
+        min-height: 210px;
+        align-items: center;
+        justify-content:space-between ;
+       
+    }
     .regInput{
+        margin: 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
-        min-height: 15%;
+        min-height: 20%;
+      
     }
     
     .form input{
-       width: 50%;
+       width: 80%;
+       height: 20px;
 
     }
     .form label {
-        font-size: 10pt;
+        font-size: 5pt;
  
     }
     .formBtn{

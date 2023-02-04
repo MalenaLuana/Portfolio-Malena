@@ -24,6 +24,7 @@ export default function SkillsCarousel(){
     return (
     <motion.div  ref={carousel} className={style.carousel} whileTap={'grabbing'}>
       <motion.div 
+      
        drag='x' 
        dragConstraints={{right:0,left:-width}}
        className={style.innerCarousel}>

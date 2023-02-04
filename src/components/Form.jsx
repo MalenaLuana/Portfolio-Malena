@@ -36,6 +36,7 @@ export default function Form() {
             </div>
 
             <form className={style.form} id='contactForm' ref={useref} onSubmit={e=>handleSubmint(e)}>
+              <div className={style.dataText}>
               <div className={style.regInput}>
                 <label htmlFor="mail" >E-MAIL:</label>
                 <input type="text" id="mail" name='mail'/>
@@ -50,7 +51,7 @@ export default function Form() {
                 <label htmlFor="subject" >ASUNTO:</label>
                 <input type="text" id="subject" name='subject'/>
                </div>
-
+               </div>
                <div className={style.messageInput}>
                 <label htmlFor="message4" >MENSAJE:</label>
                 <textarea form="contactForm" type="text" id="message" name='message' />

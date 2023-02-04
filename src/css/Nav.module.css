@@ -82,24 +82,13 @@ user-select:none;
 }
 
 
-.exitMenu{
-  color: aliceblue;
-  z-index: 1;
-  font-size: 30pt;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-.exitMenu:hover{
-  cursor: pointer;
-  user-select: none;
-}
+
 
   /* responsive */
 
   @media screen and (max-width: 970px) {
    .container{
-    height: 7vh;
+    height: 10vh;
    } 
    .links{
     width: 60%;
@@ -124,14 +113,14 @@ user-select:none;
   @media screen and (max-width: 767px) {
    .container{
     max-width: 100%;
-    z-index: 1;
+    z-index: 2;
    }
       
     .links{
    
       position:absolute;
       width: 100%;
-      height: 60vh;
+      height: 100vh;
       background-color: #292929e7;
       flex-direction: column;
       padding: 20px;
@@ -176,6 +165,10 @@ user-select:none;
 
    }
    @media screen and (max-width: 480px)  {
+    .container{
+      height: 11vh;
+    }
+  
     .menuBtn{
       width: 20%;
       
@@ -183,4 +176,5 @@ user-select:none;
     .menuBtn img {
       width: 50%;
     }
+  
    }
