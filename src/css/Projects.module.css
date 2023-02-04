@@ -56,8 +56,7 @@ font-size: 15pt;
 
 .links{
     position: absolute;
-    
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: #980222;
     border-radius: 0 32px 0 0 ;
     width: 70px;
     height: 130px;
@@ -100,9 +99,11 @@ font-size: 15pt;
     .cardsCont {
         flex-direction: column;
         align-items: center;
+        
     }
     .card{
         width: 70%;
+        margin-bottom: 2rem;
     }
    
 
@@ -117,8 +118,14 @@ font-size: 15pt;
      width: 80%;
      margin-bottom: 20px;
     }
-
-
+    .links{
+        padding: 0;
+        height: 100px;
+    }
+    .links a img {
+        width: 50%;
+      
+    }
 }
 
 @media screen and (max-width: 350px) {
