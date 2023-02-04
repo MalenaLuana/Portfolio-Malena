@@ -121,3 +121,21 @@ width: 500px;
    
 
 }
+
+@media screen and (max-width: 350px) {
+ 
+    .card{
+         width: 70%;
+         height: 90%;
+     }
+  .card .video:nth-child(1) {
+    width: 100%;
+  }
+  .title{
+    font-size: 10pt;
+  }
+  .text{
+    font-size: 10pt;
+  }
+ 
+ }

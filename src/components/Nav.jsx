@@ -10,7 +10,7 @@ export default function Nav(){
 const [clicked,setClicked]=useState(true)
 
 const handleClick= ()=>{
-    if (clicked==false){
+    if (clicked===false){
         setClicked(true)
     } else {
         setClicked(false)
@@ -27,7 +27,9 @@ const handleChangeMenu= ()=>{
            
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#banner">INICIO</a>
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#about">SOBRE MI</a>
+                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#stack">STACK</a>
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#projects">PROYECTOS</a>
+                   
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#contact">CONTACTO</a>
              </div>
            

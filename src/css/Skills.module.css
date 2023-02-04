@@ -1,0 +1,44 @@
+
+.carousel{
+overflow: hidden;
+
+}
+.innerCarousel{
+    display: flex;
+    cursor: url('./images/pointer.png'), auto;	
+    width: 130%;
+}
+.item{
+    pointer-events: none;
+}
+
+.image{
+    width: 250px;
+}
+
+
+@media screen and (max-width: 918px) {
+    .innerCarousel{
+  
+        width: 400%;
+    }
+
+  .image{
+    width: 10rem;
+  }
+    
+ 
+ }
+
+@media screen and (max-width: 480px) {
+    .innerCarousel{
+  
+        width: 400%;
+    }
+
+  .image{
+    width: 110px;
+  }
+    
+ 
+ }

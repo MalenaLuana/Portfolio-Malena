@@ -1,0 +1,38 @@
+.container{
+    min-height: 30vh;
+    width: 100vw;
+    background-color: #810f28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.ancla{
+    position: absolute;
+    top: 170%;
+}
+
+@media screen and (max-width: 918px) {
+  .container{
+    min-height: 50vh;
+  }
+  .ancla{
+    top: 250%;
+  }
+ }
+@media screen and (max-width:480px) {
+
+    .container{
+        min-height: 60vh;
+    }
+    
+}
+@media screen and (max-width:350px) {
+
+    .container{
+        min-height: 80vh;
+    }
+    
+}

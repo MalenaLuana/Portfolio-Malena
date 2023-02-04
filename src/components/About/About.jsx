@@ -23,7 +23,7 @@ useEffect(()=>{
       const {y}=div.getBoundingClientRect()
       
       let ishidden = y<=700? '100%':'0'
-      let showText = y<=600? '25pt':'0'
+      let showText = y<=600? '20pt':'0'
       if(hidden=== '0') sethidden(ishidden)
       setText(showText)
     }
