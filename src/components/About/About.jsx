@@ -58,7 +58,7 @@ useEffect(()=>{
             <div className={style.box}>
             <div className={style.front} style={{fontSize:text,transition:'all ease 1s'}}>CUÁLES SON <br/>MIS OBJETIVOS?</div>
             <div className={style.back}>
-              <div className={style.backText}> Este 2023 mi principal objetivo es conseguir mi primer experiencia laboral en el rubro IT. <br /> Encontrar el lugar que me permita desarrollarme profesionalmente y crecer a nivel personal. Con esto mejorar mi día a día, aprender cosas nuevas y darme un mejor estilo de vida.</div>
+              <div className={style.backText}> Este 2023 mi principal objetivo es potenciar mis habilidades al máximo. <br /> Encontrar un lugar que me permita desarrollarme profesionalmente y crecer a nivel personal. Con esto mejorar mi día a día, aprender cosas nuevas y darme un mejor estilo de vida.</div>
             </div>
             </div>
           </div>
