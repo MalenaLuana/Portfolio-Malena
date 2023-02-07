@@ -2,7 +2,9 @@
     background-color: #181818;
     background-image: url('../css/images/projectBack.jpg');
     background-attachment: fixed;
-     padding: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
