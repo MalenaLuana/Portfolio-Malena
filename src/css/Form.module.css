@@ -126,14 +126,14 @@
     cursor: url('./images/pointer.png'), auto;
 }
 
-.mailError{
+.mailError {
     background-color: #810f28;
-position: absolute;
-bottom: 8%;
-right: 8%;
-color: rgb(255, 255, 255);
-padding: 5px;
-border-radius: 10px;
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 
@@ -293,57 +293,63 @@ border-radius: 10px;
 
 
 @media screen and (max-width: 480px) {
-  
-    .form{
+
+    .form {
         height: 100%;
-        
+
     }
-  
-   .left h1{
-    margin: 0;
-    font-size: 10pt;
-   }
-    .social{
+
+    .left h1 {
+        margin: 0;
+        font-size: 10pt;
+    }
+
+    .social {
         min-width: 110%;
         display: flex;
         justify-content: space-around;
     }
-    
+
     .left img {
         height: 40px;
 
     }
+
     .messageInput {
         width: 80%;
         height: 20%;
     }
-    .dataText{
+
+    .dataText {
         display: flex;
         flex-direction: column;
         min-height: 210px;
         align-items: center;
-        justify-content:space-between ;
-       
+        justify-content: space-between;
+
     }
-    .regInput{
+
+    .regInput {
         margin: 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
         min-height: 20%;
-      
-    }
-    
-    .form input{
-       width: 80%;
-       height: 20px;
 
     }
+
+    .form input {
+        width: 80%;
+        height: 20px;
+
+    }
+
     .form label {
         font-size: 5pt;
- 
+
     }
-    .formBtn{
+
+    .formBtn {
         height: 25px;
         margin-top: 10px;
     }
