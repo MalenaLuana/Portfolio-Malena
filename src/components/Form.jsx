@@ -3,10 +3,6 @@ import emailjs from '@emailjs/browser'
 import style from '../css/Form.module.css'
 
 
-import wpp from '../css/images/wpp.png'
-import linkedin from '../css/images/in.png'
-import git from '../css/images/git.png'
-
 export default function Form() {
 
 
@@ -73,18 +69,14 @@ export default function Form() {
             <div className={style.formContent}>
 
             <div className={style.left}>
-                <h1>   contactame</h1>
-                <div className={style.social}>
-                  <a href="https://api.whatsapp.com/send?phone=1150046655&text=Link%20a%20wpp" target="_blank" rel="noopener noreferrer"><img src={wpp} alt="" /></a>
-                  <a href="https://www.linkedin.com/in/malena-luana-fresco/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" /></a>
-                  <a href="https://github.com/MalenaLuana" target="_blank" rel="noopener noreferrer"><img src={git} alt="" /></a> 
-                </div>
+                <h1> contacto</h1>
+               
             </div>
 
             <form className={style.form} id='contactForm' ref={useref} onSubmit={e=>handleSubmint(e)}>
               <div className={style.dataText}>
               <div className={style.regInput}>
-                <label htmlFor="mail" >E-MAIL</label>
+                <label htmlFor="mail" >MAIL</label>
                 <input placeholder="ejemplo@algo.com" type="text" id="mail" name='mail' onChange={e=>handleChange(e)} value={formData.mail} required/>
               </div>
               

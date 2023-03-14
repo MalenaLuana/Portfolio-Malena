@@ -9,7 +9,6 @@ import About from "./About/About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Banner from "./Banner";
-import Stack from "./Stack";
 
 
 
@@ -22,7 +21,7 @@ return(
      <Nav/>
      <Banner/>
      <About/>
-     <Stack/>
+     
      <Projects/>
      <Contact/>
     </motion.div>

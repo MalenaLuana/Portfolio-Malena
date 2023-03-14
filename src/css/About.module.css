@@ -1,229 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
 
-@font-face {
-    font-family: Louis George Cafe Light;
-    src: url('./fonts/LOUIS\ GEORGE\ CAFE\ LIGHT.TTF')
-}
+
+
 .container {
     background-color: #181818;
-    height: 110vh;
-    width: 100%;
     color: white;
-    user-select:none;
+    margin-top: -1px;
+    padding: 15vh 3rem ;
+   width: 100%;
     position: relative;
-
-}
-
-.ancla{
-
-    position: relative;
-    top: 5vh;
-    padding-top: 15vh;
-}
-.content{
     display: flex;
-    font-family: 'Louis George Cafe';
-    letter-spacing: 1.5px;
-    justify-content: space-around;
-    text-align: center;
-
-}
-
-
-.red{
-    position:absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 105vh;
-    background-color: #810f28;
-
-}
-
-/*?-----------------------------CARDS*/
-.card{
-    background-color:#181818;
-    width: 30%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#eeeeee;
-    font-size: 40pt;
-}
-
-.card {
-    float: left;
-    perspective: 800px;
-    transition: all 0.5s ease 0s;
-   
-
-}
-.card:hover .box {
-    cursor: url('./images/cursor.png'), auto;	
-}
-.card:focus .box {
-    transform: rotateY(180deg);
-
-
-}
-.box {
-    cursor: default;
-    transform-style: preserve-3d;
-    transition: transform 0.4s ease 0s;
-    height: 100%;
-    width: 100%;
-    -webkit-animation: giro 1s 1;
-    animation: giro 1s 1;
-
-}
-.box .front {
-    backface-visibility: hidden;
-    font-size: 30pt;
-    height: 100%;
-    padding: 0.8em;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box .back {
-  
-    backface-visibility: hidden;
-    font-family:Louis George Cafe Light;
-    font-size: 30pt;
-    
-    padding-left:50px ;
-    padding-right: 50px;
-    width: 100%;
-    height: 100%;
-    line-height:1.5em;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.box .back {
-    transform: rotateY(180deg);
-}
-
-.backText{
-    font-size: 14pt;
-}
-
-/*?-----fin------------------------CARDS*/
-
-
-
-
-
-
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 970px) {
-  .container {
-    background-color: #181818;
-
-    width: 100%;
-    color: white;
-    user-select:none;
-    position: relative;
-
-}
-.red{
-    min-height: 145vh;
-}
-.content{
-    display: flex;
-    
     flex-direction: column;
-   font-family: 'Louis George Cafe';
-   letter-spacing: 1.5px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-
 }
 
-.card{
-    width: 80%;
-    height: 45vh;
+.content{
     display: flex;
-    margin-top: 5px;
-    align-items: center;
-    color:#eeeeee;
-    font-size: 40pt;
 }
-.box .back {
-  
-    backface-visibility: hidden;
-    font-family:Louis George Cafe Light;
+.ancla {
+    position: absolute;
+    top: -1%;
+}
 
-    padding-top: 10px;
-    padding-left:50px ;
-    padding-right: 50px;
+.card1 {
+
     width: 100%;
-    line-height:1em;
-
+    display: grid;
+    align-items: center;
+    padding: 2%;
+    row-gap: 20px;
 }
-   }
 
-   @media screen and (max-width: 1550px) {
+.title {
+    
+    width: 100%;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+}
 
-    .box .back {
+.number {
+    color: #980222;
+    margin-right: 10px;
+}
 
-        padding-top: 40px;
-        padding-left:50px ;
-        padding-right: 50px;
-        width: 100%;
-        line-height:1.3em;
-      
-    }
-    .backText{
-        font-size: 12pt;
-    }
+.card1 .text {
 
-   }
-   @media screen and (max-width: 1120px) {
-    .red{
-        min-height: 160vh;
-    }
-    .container{
-        min-height: 160vh;
-    }
-    .box .back {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    padding-left: 10px;
+   
+}
 
-        padding-top: 20px;
-        line-height:1em;
-      
+.cv{
+  background-color:#980222 ;
+  width: 10%;
+  margin-top: 5%;
+  height: 50px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  transition: ease all 0.2s;
+}
+
+.cv:hover{
+    cursor: url('./images/pointer.png'), auto;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+
+    .content{
+        flex-direction: column;
     }
-    .backText{
-        font-size: 10pt;
+    .card1{
+        padding: 5%;
     }
- 
-   }
-   @media screen and (max-width: 480px) {
-    .container{
-        min-height: 150vh;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 15vh 0;
     }
-    .backText{
-        line-height:15px
+   
+    .title{
+        font-size: 11pt;
     }
-   }
-   @media screen and (max-width: 350px) {
-    .red{
-        min-height: 200vh;
+    .card1 .text {
+
+        font-size: 11pt;
+       
     }
-    .container{
-        min-height: 200vh;
-    }
-    .card{
-        height: 300px;
-    }
-    .backText{
-        line-height:15px
-    }
-   }
+}

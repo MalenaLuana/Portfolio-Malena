@@ -4,55 +4,31 @@
     align-items: center;
     height: 110vh;
     user-select: none;
+    width: 100%;
 }
 
 .formContent {
-
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    height: 700px;
-    margin: 15vh;
-}
-
-.formContent .left {
-    background-color: #810f28;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: #f7f6f6;
-    width: 40%;
-    padding: 50px;
+    width: 80%
 }
+
 
 .left h1 {
-    font-family: Shockwave;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30pt;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
-.left img {
-    height: 150px;
-}
-
-.social {
-    margin-top: 20px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 
 .form {
-    border: solid;
-    border-color: rgb(64, 64, 64);
-    border-width: 1px;
-    border-left: none;
-    width: 60%;
+    width: 70%;
     color: rgb(255, 255, 255);
-    font-family: Louis George Cafe;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -60,30 +36,40 @@
 
 }
 
+.dataText {
+    border: solid redm;
+    width: 100%;
+}
+
 .regInput {
 
-    width: 500px;
+
     font-size: 15pt;
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
+.regInput label {
+    width: 10%;
+}
+
 .regInput input {
+
+    border: solid rgba(168, 168, 168, 0.192) 1px;
     width: 60%;
     height: 40px;
     margin-top: -10px;
     background-color: rgb(49, 49, 49);
     color: aliceblue;
-    border: none;
+
     padding: 5px;
 }
 
 .messageInput {
-
     font-size: 15pt;
-    width: 500px;
+    width: 85%;
     height: 300px;
     margin-top: 50px;
     display: flex;
@@ -92,7 +78,8 @@
 }
 
 .messageInput textarea {
-    border: none;
+
+    border: solid rgba(168, 168, 168, 0.192) 1px;
     resize: none;
     width: 100%;
     height: 80%;
@@ -139,218 +126,23 @@
 
 /*responsiveee <3*/
 
-@media screen and (max-width: 1550px) {
-
-    .formContent {
-        width: 70%;
-        height: 700px;
-    }
-
-    .left h1 {
-
-        font-size: 25pt;
-        letter-spacing: 5px;
-    }
-
-    .left img {
-        height: 110px;
-    }
-
-    .regInput {
-
-        width: 400px;
-        font-size: 15pt;
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .messageInput textarea {
-
-        width: 90%;
-        height: 80%;
-
-
-        margin-top: 10px;
-
-        font-size: 12pt;
-
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
-
-    .formContent {
-        width: 70%;
-        height: 600px;
-    }
-
-    .regInput {
-
-        width: 300px;
-        font-size: 12pt;
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .messageInput {
-
-        font-size: 12pt;
-        width: 400px;
-        height: 250px;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .formBtn {
-        width: 100px;
-        height: 40px;
-        font-size: 10pt;
-
-    }
-
-}
-
-@media screen and (max-width: 950px) {
-
-
-    .formContent {
-        width: 80%;
-        height: 600px;
-    }
-
-}
-
-@media screen and (max-width: 950px) {
-
-
-    .formContent {
-        width: 80%;
-        height: 600px;
-    }
-
-}
-
-@media screen and (max-width: 850px) {
-
-
-    .formContent {
-        flex-direction: column;
-
-        height: 70%;
-
-
-    }
+@media screen and (max-width: 900px) {
 
     .form {
-        height: 80vh;
         width: 100%;
-        border-top: none;
-        border-left: solid 1px rgb(64, 64, 64);
-
     }
 
-    .formContent .left {
-        background-color: #810f28;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #f7f6f6;
-        width: 100%;
-        height: 20%;
+    .regInput label {
+        font-size: 12pt;
+        width: 10%;
     }
 
-    .left h1 {
-        margin-top: 10px;
-        font-size: 14pt;
-    }
-
-    .formContent .left .social {
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .left img {
-        height: 80px;
-
-    }
-
-    .regInput {
-        justify-content: space-around;
-        margin-top: 30px;
-    }
 }
 
+@media screen and (max-width: 400px) {
 
-
-@media screen and (max-width: 480px) {
-
-    .form {
-        height: 100%;
-
-    }
-
-    .left h1 {
-        margin: 0;
-        font-size: 10pt;
-    }
-
-    .social {
-        min-width: 110%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .left img {
-        height: 40px;
-
-    }
-
-    .messageInput {
-        width: 80%;
-        height: 20%;
-    }
-
-    .dataText {
-        display: flex;
-        flex-direction: column;
-        min-height: 210px;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    .regInput {
-        margin: 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        min-height: 20%;
-
-    }
-
-    .form input {
-        width: 80%;
-        height: 20px;
-
-    }
-
-    .form label {
-        font-size: 5pt;
-
-    }
-
-    .formBtn {
-        height: 25px;
-        margin-top: 10px;
+    .regInput label {
+        font-size: 9pt;
+        width: 10%;
     }
 }

@@ -27,7 +27,7 @@ const handleChangeMenu= ()=>{
            
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#banner">INICIO</a>
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#about">SOBRE MI</a>
-                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#stack">STACK</a>
+       
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#projects">PROYECTOS</a>
                    
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#contact">CONTACTO</a>

@@ -1,147 +1,215 @@
 .container {
+    min-height: 100vh;
+    width: 100%;
     background-color: #181818;
-    background-image: url('../css/images/projectBack.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10rem;
+    margin-top: -5%;
+    padding-top: 20vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+.container {
+    color: white;
+
+}
+
+.titleMain {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.cardsCont {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 }
 
-
-.cardsCont {
-
-    display: flex;
-    justify-content: space-around;
-
-}
-
 .card {
+    box-sizing: border-box;
     position: relative;
-    width: 30%;
-    background-color: #ffffff;
-    border-radius: 32px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
 }
 
-.description{
+.card img {
+    pointer-events: none;
+    width: 50%;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 15px;
+    object-position: top;
+
+}
+
+.description {
+
     padding: 20px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-betweens;
 }
 
-.title{
+.title {
+    text-align: center;
     font-family: 'Louis George Cafe';
-    color: rgb(0, 0, 0);
-    font-size: 15pt;
+    font-size: 17pt;
     margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-}
-.info{
-    width: 100%;
-}
-
-.text{
-
-margin-top: 5px;
-color: rgb(0, 0, 0);
-font-family: 'Louis George Cafe';
-font-weight: lighter;
-font-size: 15pt;
-}
-
-.links{
-    position: absolute;
-    background-color: #980222;
-    border-radius: 0 32px 0 0 ;
-    width: 70px;
-    height: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-bottom-left-radius: 10px;
-    padding-left: 5px;
-    right: 0;
-    top: 0;
-    z-index: 0  ;
 }
-.links a {
-    display: flex;
-    justify-content: center;
+
+.subtitle {
+    font-weight: 500;
+    color: #afafaf;
+    font-size: 13pt;
+}
+
+.text {
+    text-align: center;
     margin-top: 5px;
-}
-.links a img {
-    width: 70%;
-  
-}
-
-
-.links a img:hover {
-    width: 90%;
+    font-family: 'Louis George Cafe';
+    font-weight: lighter;
+    font-size: 15pt;
 }
 
-.video:nth-child(1){
-   border-radius:32px  32px 0 0;
-   width: 100%;
+.links {
+
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
+.demo {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #980222;
+    margin: 10px 9px;
+    padding: 5px;
+    transition: ease all 0.2s;
+}
 
-@media screen and (max-width: 918px) {
- 
-   .container{
-    padding: 5%;
-   }
-    .cardsCont {
-        flex-direction: column;
-        align-items: center;
-        
+.demo:hover {
+    cursor: url('./images/pointer.png'), auto;
+    border-radius: 10px;
+}
+
+.demo img {
+    width: 20px;
+    height: fit-content;
+    user-select: none;
+
+}
+
+.demo h5,
+img:hover {
+
+    cursor: url('./images/pointer.png'), auto;
+}
+
+@media screen and (max-width: 1550px) {
+
+    .container {
+        padding: 0;
     }
-    .card{
-        width: 70%;
+
+    .cardsCont {
+        align-content: center;
+        padding: 0;
+    }
+
+    .card {
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
         margin-bottom: 2rem;
     }
-   
 
+    .card img {
+        width: 50%;
+        align-self: center;
+    }
+
+    .description {
+
+        width: 70%;
+        align-self: center;
+
+    }
+
+    .demo img {
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .container{
-     padding: 1rem;
-     }
-    
-   .card{
-     width: 80%;
-     margin-bottom: 20px;
+    .description {
+        width: 100%;
+        align-self: center;
     }
-    .links{
-        padding: 0;
-        height: 100px;
+
+    .cardsCont {
+        width: 100%;
     }
-    .links a img {
-        width: 50%;
-      
+
+    .card {
+        width: 90%;
+    }
+
+    .card img {
+        width: 60%;
+        align-self: center;
+    }
+
+    .demo {
+        width: 150px;
+    }
+
+    .demo img {
+        width: 20%;
     }
 }
 
 @media screen and (max-width: 350px) {
- .container{
-    min-height: 160vh;
- }
-   .card{
-    width: 70%;
-   }
-  .title{
-    font-size: 10pt;
-  }
-  .text{
-    font-size: 10pt;
-  }
- 
- }
+    .card {
+        width: 100%;
+    }
+
+    .description {
+        width: 90%;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 12pt;
+    }
+
+    .subtitle {
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    .text {
+
+        font-size: 13pt;
+    }
+
+}

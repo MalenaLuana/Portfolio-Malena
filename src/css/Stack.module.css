@@ -1,9 +1,29 @@
 .container {
-    padding: 10rem 0;
-    width: 100vw;
-    background-color: #810f28;
+    
+    width: 100%;
+    background-color: #181818;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3rem;
+    
+}
+
+.container h3 {
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 32px;
+    flex-direction: column;
     align-items: center;
 
 
@@ -11,35 +31,86 @@
 
 .ancla {
     position: absolute;
-    top: 170%;
+    top: 200%;
 }
+
+.skills {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image {
+    width: 10%;
+    pointer-events: none;
+}
+
 
 @media screen and (max-width: 918px) {
     .container {
         min-height: 50vh;
+        padding-bottom: 10;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+         row-gap: 10px;
+        column-gap: 5px;
     }
 
     .ancla {
         top: 250%;
     }
+
+    .image {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:480px) {
+    .container{
+      margin-top: 3rem;
+      padding-top: 2rem;
+      box-sizing: content-box;
+    }
     .ancla {
         top: 270%;
+    }
+
+    .skills {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
+    .image {
+        width: 80%;
     }
 
     .container {
         min-height: 60vh;
         padding: 0;
+        padding-bottom: 10px;
     }
 
 }
 
 @media screen and (max-width:350px) {
-
+    .container h3 {
+        color: white;
+    
+    }
     .container {
         min-height: 80vh;
+    }
+    .image{
+        width: 90%;
     }
 
 }

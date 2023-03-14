@@ -23,7 +23,7 @@ export default function Banner(){
             <h1 className={style.one}>BIENVENIDXS</h1>
             <div className={style.middle}>
                 <img src={left} alt="" />
-                <h3>A mi primer</h3>
+                <h3>A mi</h3>
                 <img src={right} alt="" />
             </div>
             <a href="#about" className={style.port}>PORTFOLIO</a> 
