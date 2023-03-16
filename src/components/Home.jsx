@@ -9,6 +9,7 @@ import About from "./About/About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Banner from "./Banner";
+import Galery from "./Galery";
 
 
 
@@ -23,6 +24,7 @@ return(
      <About/>
      
      <Projects/>
+     <Galery/>
      <Contact/>
     </motion.div>
 )

@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #181818;
     margin-top: -5%;
-    padding-top: 20vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -108,7 +108,7 @@
 }
 
 .demo:hover {
-    cursor: url('./images/pointer.png'), auto;
+   
     border-radius: 10px;
 }
 
@@ -119,11 +119,7 @@
 
 }
 
-.demo h5,
-img:hover {
 
-    cursor: url('./images/pointer.png'), auto;
-}
 
 @media screen and (max-width: 1550px) {
 

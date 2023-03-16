@@ -55,7 +55,6 @@
 
   .title:hover {
     background-position: 0;
-    cursor: url('./images/pointer.png'), auto;	
     letter-spacing: 4px;
    }
 

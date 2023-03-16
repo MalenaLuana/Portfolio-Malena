@@ -69,7 +69,9 @@ export default function About() {
               <div className={style.backText}>◽Jugar video juegos 🎮<br /> ◽Cantar y componer canciones 🎹 <br />◽Pedir comida a domicilio 💜 <br />◽Ver videos tutoriales para saber cual va a ser mi próximo hobby. </div>
             </div>
           </div>
+         
         </div>
+        <hr className={style.line}/>
       </div>
       <Stack></Stack>
       <a className={style.cv} href={cv} download="CV_mMalenaFresco">

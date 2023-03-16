@@ -32,7 +32,7 @@
 
 text-decoration: none;
 font-family:'Louis George Cafe Light';
-font-size: 20pt;
+font-size: 18pt;
 padding: 20px;
 color: white;
 overflow: hidden;
@@ -77,9 +77,6 @@ user-select:none;
     width: 50px;
     
   }
-.menuBtn img:hover{
-  cursor: pointer;
-}
 
 
 

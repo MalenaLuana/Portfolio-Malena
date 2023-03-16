@@ -30,6 +30,7 @@ const handleChangeMenu= ()=>{
        
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#projects">PROYECTOS</a>
                    
+                    <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#galery">GALERÍA</a>
                     <a onClick={e=>handleChangeMenu(e)} className={style.link} href="#contact">CONTACTO</a>
              </div>
            

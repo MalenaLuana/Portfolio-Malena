@@ -109,8 +109,7 @@
 .formBtn:hover {
     background-color: #980222;
     color: rgb(255, 255, 255);
-    cursor: pointer;
-    cursor: url('./images/pointer.png'), auto;
+
 }
 
 .mailError {
